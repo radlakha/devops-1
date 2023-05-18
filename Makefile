@@ -1,13 +1,15 @@
 install:
-    #install command
+	#install command
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
 format:
-    #format code command
-    #black or yapf
+	#format code command
+	#black or yapf
 	@echo "formatting code"
 lint:
-    #flake8 or pylint
+	#flake8 or pylint
 test:
-    #pytest
+	#pytest
 deploy:
-    #deploy command
+	#deploy command
 all: install lint test deploy
