@@ -1,4 +1,4 @@
-name: Setting up Devops using Github Actions
+name: Devops using Github Actions & Makefile
 on: [push]
 jobs:
   build:
@@ -8,7 +8,7 @@ jobs:
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
-        python-version: 3.10
+        python-version: 3.10.4
     - name: Install dependencies
       run: |
           make install
