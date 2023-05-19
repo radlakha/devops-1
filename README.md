@@ -14,4 +14,11 @@ Will write some useful code using codespaces and create a container to be deploy
     main.py
     mylib/logic.py
 4. Put project lifecycle steps inside the makefile
+5. Create a Github Action for automating execution of makefile on commit/push events
+    # make a folder in the repo where Github expects all Action workflows
+    `mkdir .github`
+    `mkdir .github\workflows`
+    # create an empty workflow
+    `touch .github/workflow/devops-1.yml`
+
 
